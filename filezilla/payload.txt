@@ -40,6 +40,7 @@ QUACK STRING cp sitemanager.xml $lootdir/sitemanager.xml
 QUACK ENTER
 
 # Close terminal
+QUACK DELAY 500
 QUACK GUI W
 
 LED FINISH
