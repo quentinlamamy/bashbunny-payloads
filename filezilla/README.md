@@ -1,8 +1,8 @@
 # Filezilla Credential Exfiltration
 
-Author  : Quentin Lamamy 
-Version : Version 1.0 
-Target  : OSX
+Author  : Quentin Lamamy  
+Version : Version 1.0  
+Target  : OSX  
 
 ## Description
 
