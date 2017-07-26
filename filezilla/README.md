@@ -1,7 +1,7 @@
 # Filezilla Credential Exfiltration
 
 Author  : Quentin Lamamy  
-Version : Draft, The V1 is coming soon
+Version : Draft, The V1 is coming soon  
 Target  : OSX  
 
 ## Description
